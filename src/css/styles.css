@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section.hero-banner {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../../assets/hero-img.jpg);
+}
+
+section.hero-banner h1 {
+    font-size: 45px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    height: 50px;
+    width: 800px;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 15px 0 50px;
+}
+
+.search-bar img {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Section Container */
+section.container {
+    height: auto;
+    max-width: 1300px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+}
+
+section.container img {
+    width: 415px;
+    margin: 7.5px 0;
+    transition: .3s;
+    cursor: pointer;
+}
+
+section.container img:hover {
+    filter: brightness(.5);
+}
